@@ -3,16 +3,16 @@ html {
 }
 
 body {
-    background-color: rgb(55, 14, 97);
-    color: rgb(212, 209, 209);
+    background-color: rgb(96, 114, 98);
+    color: rgb(0, 0, 0);
 }
 
 a {
-    color: rgb(21, 88, 8);
+    color: rgb(0, 0, 0);
 }
 
 a:visited {
-    color: rgb(87, 85, 89);
+    color: rgb(9, 92, 57);
 }
 
 a:hover, a:active {
