@@ -14,7 +14,93 @@
 
     <head>
         <body>
+            <h1>
+                <center>Understanding HTML!</center>
+            </h1>
+
             <hr>
+
+            <h2>Useful Tags to Note!</h2>
+
+            <figure>
+                <figcaption>
+                    Example One
+                </figcaption>
+                <p>
+                    <code>&lt;audio&gt; &lt;/audio&gt;</code>
+                </p>
+             </figure>
+
+             <p>The audio Tag allows for you to add an audio file in the forms of: MP3, WAV, OGG. <br>For Example the code:</p>
+             
+             <figure>
+                <p>
+                    <code>&lt;audio controls&gt; &lt;source src= "dog_bark.mp3" type = "audio/mpeg"&gt;<br>&lt;/audio&gt;</code>
+                </p>
+                <figcaption>
+                    <em>
+                        <abbr title="W3Schools">
+                             <a href="https://www.w3schools.com/tags/tag_audio.asp">Source Found Here!</a>
+                        </abbr>
+                    </em>
+                </figcaption>
+             </figure>
+
+             <p>Will display an audio file of a dog barking. The attribute, &lt;controls&gt;, allows for the play and pause button to be displayed. </p>
+
+             <figure>
+                <figcaption>
+                    Dog Audio Example
+                </figcaption>
+                <audio controls>
+                    <source src="mp3/dog_bark.mp3" type="audio/mpeg">
+                </audio>
+             </figure>
+
+             <br>
+
+             <figure>
+                <figcaption>
+                    Example Two
+                </figcaption>
+                <p>
+                    <code>&lt;form&gt; &lt;/form&gt;</code>
+                </p>
+             </figure>
+
+             <p>
+                This tag allow for the input of user information. It can be used in to create surveys, calculate equations with different variables, and much more. The code:
+             </p>
+
+             <figure>
+                <p>
+                    <code>
+                        &lt;form oniput="x.value=parseInt(a.value)+parseInt(b.value)"&gt; <br> &lt;input type="range" id="a" value="50"&gt; <br> +&lt;input type= "number" id="b" value="25"&gt; <br>=&lt;output name="x" for="a b"&gt;&lt;/output&gt;<br>&lt;/form&gt;
+                    </code>
+                </p>
+                <figcaption>
+                    <em>
+                        <abbr title="W3Schools">
+                             <a href="https://www.w3schools.com/tags/tag_output.asp">Source for Example Found Here!</a>
+                        </abbr>
+                    </em>   
+                </figcaption>
+             </figure>
+
+             <p>
+                Will create a form to perform the calculation for the equation. <a href="https://www.w3schools.com/jsref/event_oninput.asp">The attribute, oninput, defines when to run the calculations for the equation. When the user inputs an element or when the input changes, the oniput event occurs</a> The tag, &lt;input&gt;, defines the type of data the user can input while the output tag will define what is displayed as the calculation.
+             </p>
+
+             <figure>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="range" id="a" value="50">
+                    +<input type="number" id="b" value="25">
+                    =<output name="x" for="a b"></output>
+                    </form>
+             </figure>
+
+             <hr>
+
             <p>
                 <center><a href="index.html">Back To Homepage</a></center>
             </p>
