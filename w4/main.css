@@ -1,0 +1,16 @@
+html {
+    font-size: 18px
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+a {
+    color:#BADFF2 
+}
+
+a:visited {
+    color: #7B75CF
+}
