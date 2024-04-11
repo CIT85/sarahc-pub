@@ -53,8 +53,44 @@
                 while, I can see how intelligent prompt writing can really improve the quality and specificity of the
                 output.</p>
         </article>
+        <hr>
+        <article>
+            <h2>Valorant Tips Newsletter</h2>
+            <p>Subscribe for more Valorant tips!</p>
 
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Tyson" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ngo" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="9999999999" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="tenz@sentinels.org" required autocomplete="on">
+            </p>
+            <p>
+                <label for="role">Preferred Agent Role:</label>
+                <select name="role" id="role">
+                    <option value="duelist">Duelist</option>
+                    <option value="initiator">Initiator</option>
+                    <option value="sentinel">Sentinel</option>
+                    <option value="controller">Controller</option>
+                </select>
+            </p>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+            <button type="reset">Reset</button>
+            </form>
+
+        </article>
     </main>
+    <hr>
     <footer>
         <a href="#">Back to Top</a>
     </footer>

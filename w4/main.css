@@ -14,3 +14,9 @@ a {
 a:visited {
     color: #7B75CF
 }
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
