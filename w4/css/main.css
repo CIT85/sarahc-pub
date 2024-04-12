@@ -1,0 +1,124 @@
+html {
+    font-size: 18px;
+}
+/* sets the font size of the whole page to 18px */
+
+body {
+    background-color: #070b24;
+    color: #C6CDFB;
+    margin: 2rem;
+}
+/* sets the background and text color for the whole body */
+/* adds a margin of 2rem to the body */
+
+h1, nav{
+    text-align: center;
+}
+/* aligns the h1 and nav elements to the center of the page */
+
+h1, h2 {
+    color: #D62B5A;
+    text-decoration: underline;
+}
+/* changes text color and adds underline h1 and h2 elements */
+
+h2 {
+    font-size: 1.75rem;
+}
+/* h2 font size is slightly bigger than default, but smaller than h1 */
+
+h3 {
+    color: #3E92CC;
+}
+/* changes color of h3 elements */
+
+a {
+    color:#8FE7FF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3E92CC;
+}
+
+a:hover {
+    color:#D62B5A;
+}
+
+/* links, visited, and hovering match the color scheme and the underline is removed from all */
+
+form {
+    color:#3E92CC;
+}
+/* changes the form text color */
+
+table, tr, th, td, caption {
+    border: 2px solid #3E92CC;
+    border-collapse: collapse;
+    padding: 0.75rem;
+}
+/* makes tables and their captions have a single line border that is solid and is a different color from the body text color, also adds padding to the rows, columns, and caption */
+
+table {
+    width: 50%;
+}
+/* table elements are at 50% the width of the page */
+
+caption {
+    color: #8FE7FF;
+}
+/* captions are set to a different color than the body */
+
+ul {
+    color: #3E92CC;
+}
+
+.banner {
+    text-align: center;
+}
+/* class used for banner image is centered on the page */
+
+.exerciseTitle {
+    color: #8FE7FF;
+}
+/* the text color in specific data cells on some of the tables is set to a different color than the body */
+
+.tipsList {
+    width: 75%;
+    color: #C6CDFB;
+}
+/* some ul that display similar content are taking up 75% the width of the page and their color matches the body's color */
+/* this can serve as my example of specificity; I used a class selector and assigned certain content on the page this class so that only those lists will have a modified width and match the body color, since I have used lists eslewhere with a different font color specified. The class selector is more specific than a tag selector. The ul tag selector (0,0,1,0) has a score of 1, while the class selector (0,1,0,0) has a score of 10*/
+
+.colors {
+    text-align: center;
+    border-style: hidden;
+}
+/* text in the table showing the color scheme is aligned to the center and the outer border is hidden */
+
+.Raspberry {
+    background-color: #D62B5A;
+}
+/* specific data cells in the color scheme table have background color set to correspond with their text */
+
+.Oxford {
+    background-color: #070b24;
+}
+/* specific data cells in the color scheme table have background color set to correspond with their text */
+
+.Celestial {
+    background-color: #3E92CC;
+}
+/* specific data cells in the color scheme table have background color set to correspond with their text */
+
+.Periwinkle {
+    color: #D62B5A;
+    background-color: #C6CDFB;
+}
+/* specific data cells in the color scheme table have background color set to correspond with their text; the text color is also changed so the contrast is appropriate */
+
+.Blue {
+    color: #D62B5A;
+    background-color: #8FE7FF;
+}
+/* specific data cells in the color scheme table have background color set to correspond with their text; the text color is also changed so the contrast is appropriate */

@@ -8,7 +8,7 @@
     <title>Week 4 CSS Group Work</title>
 
     <link rel="icon" href="../img/ch-icon.png" type="img/x-icon">
-    <link rel="stylesheet" href="../w4/main.css" type="text/css">
+    <link rel="stylesheet" href="../w4/css/main.css" type="text/css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <h2>Menu</h2>
             <ul>
                 <li>
-                    <a href="#introduction">Home</a>
+                    <a href="../w4/index.html">Home</a>
                 </li>
                 <li>
                     <a href="../w4/about.html">About</a>
@@ -37,6 +37,7 @@
     </header>
     <hr>
     <main>
+
         <article id="introduction">
             <h2>Introduction</h2>
             <p>
@@ -46,12 +47,11 @@
                 achieve their competitive goals.
             </p>
             <br>
-            <figure>
-                <img src="../img/pc-setup.png" alt="Gaming setup" title="Get good!" width="300" height="300">
-                <figcaption>
-                    Obviously, the most important factor that determines your rank is the quality of your gaming chair.
-                </figcaption>
+            <figure class="banner">
+                <img src="../img/valorant-neon-feature.png" alt="Valorant Loading Screen Image"
+                    title="Neon from Valorant" width="800" height="333">
             </figure>
+            <br>
         </article>
         <article id="game-mechanics">
             <h2>Game Mechanics</h2>
@@ -62,7 +62,7 @@
                 is essential for developing skills and strategies to succeed in the game.
             </p>
             <h3>Master Your Mouse Sensitivity</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     Getting your mouse sensitivity just right can drastically improve your aim. It's all about finding
                     that sweet spot where you can make precise movements without feeling too twitchy or sluggish.
@@ -85,7 +85,7 @@
                 <caption>Mouse Sensitivity Exercises</caption>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="exerciseTitle">
                             Tracking Exercise
                         </td>
                         <td> In the range, turn on practice bots with no movement. Choose a bot and place your crosshair
@@ -94,7 +94,7 @@
                             falling short. Experiment with different distances to cover all your bases.</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="exerciseTitle">
                             Flick Shot Exercise
                         </td>
                         <td>Head to the range and select your desired difficulty. While standing still, flick to each
@@ -108,7 +108,7 @@
             </table>
 
             <h3>Prioritize Crosshair Placement</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     Crosshair placement is a fundamental aspect of aiming that can give you a huge advantage in
                     gunfights. Always keep your crosshair at head level and pre-aim common angles where enemies are
@@ -130,7 +130,7 @@
                 <caption>Crosshair Placement Exercises</caption>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="exerciseTitle">
                             Peek and Pre-Aim Exercise
                         </td>
                         <td>Head into the Valorant range and choose Sage as your agent. Turn on practice bots and place
@@ -144,7 +144,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="exerciseTitle">
                             Map Exploration Exercise
                         </td>
                         <td>Start by loading up each map individually in a custom game. Begin traversing the map, paying
@@ -175,7 +175,7 @@
                 intuition. Good game sense can really set you apart as a player.
             </p>
             <h3>Focus on Communication</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     In Valorant, communication is king. Use your mic to call out enemy positions, share information
                     about your own movements, and coordinate strategies with your team.
@@ -193,7 +193,7 @@
                 </li>
             </ul>
             <h3>Learn Multiple Agents</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     Valorant offers a diverse roster of agents, each with their own unique abilities and playstyles.
                     Learning to play multiple agents gives you flexibility and adaptability in different situations.
@@ -211,7 +211,7 @@
                 </li>
             </ul>
             <h3>Watch Your Own Replays</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     Reviewing your own gameplay is one of the most effective ways to identify areas for improvement and
                     refine your skills. Set aside time to watch replays of your matches, paying close attention to your
@@ -239,7 +239,7 @@
                 just as important as your aim and game sense when it comes to winning matches.
             </p>
             <h3>Stay Positive and Mentally Resilient</h3>
-            <ul>
+            <ul class="tipsList">
                 <li>
                     Keeping a positive attitude and staying mentally resilient is crucial for success in Valorant's
                     competitive ladder. Competitive gaming can be challenging and frustrating at times, but how you
@@ -267,10 +267,19 @@
                 fuel to drive your improvement. Celebrate your successes, no matter how small, and continue pushing
                 yourself to reach new heights. Practice, learn, and most importantly, have fun!
             </p>
+            <figure>
+                <img src="../img/pc-setup.png" alt="Gaming setup" title="Get good!" width="300" height="300">
+                <figcaption>
+                    Obviously, the most important factor that determines your rank is the quality of your gaming chair.
+                </figcaption>
+            </figure>
         </article>
+        <hr>
     </main>
     <footer>
         <a href="#">Back to Top</a>
+        <br>
+        <a href="../w4/sitemap.html">Sitemap</a>
     </footer>
 </body>
 
