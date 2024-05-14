@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || BODY, FONT */
+
+body {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-family: "Crimson Text", serif;
+        color: #3b3f35;
+    background-color: hsla(26, 33%, 92%, 0.801);
+}
+
+/* body padding, font size and color, bg color */
+
+/* || NAV*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #555B4C;
+    border-radius: 5px;
+}
+
+/* flex containter, items stacked vertically, bg color and border radius*/
+
+nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    /*     text-align: center; */
+}
+
+/* removes bullet points, adds padding, and aligns the nav center */
+
+nav h2 {
+    position: absolute;
+    left: -999999px;
+}
+
+/* hides the menu h2 */
+
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+/* displays the list items left to right and the margin provides some space between them */
+
+nav {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
+nav a {
+    color: #CFC7DD;
+}
+
+nav a:hover {
+    color: #A48681;
+}
+
+/* nav font size, aligned to end/right of flex containter */
+
+/* || MAIN */
+main {
+    margin-top: 1rem;
+}
+
+/* || HEADINGS */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #d2ccdd;
+}
+
+/* bigger font and centered, color */
+
+.hiddenText {
+    position: absolute;
+    left: -999999px;
+}
+
+/* hiding headings */
+
+/* || CONTENT */
+section {
+    margin-bottom: 2rem;
+}
+/* margin on the bottom of section elements to make separation between them clearer */
+
+.indexName {
+    text-shadow: 2px 2px 5px #2b2535;
+}
+/* index h1 shadow */
+
+.indexContent {
+    display: flex;
+}
+/* displaying p and img on index flex, so they are columns with the img on the right */
+
+p {
+    margin: 1rem auto;
+}
+/* adding top and bottom margins to p */
+
+img {
+    border: 3px solid #555B4C;
+    border-radius: 5%;
+}
+/* img border */
+
+.center-img {
+        display: block;
+    margin: 0 auto;
+}
+
+/* display as block so it can occupy full width, auto left and right margin to center */
+
+.centerP {
+        width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* smaller width, aligned center*/
+
+.eventimg {
+    float: right;
+}
+
+.policies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+/* displaying policies in grid, auto columns min width 300px, max equal width, 3rem gap */
+
+ol {
+    margin-left: 1rem;
+}
+/* left margin to make more equal appearing with h3s */
+
+summary {
+    font-size: 1.5rem;
+}
+/* summary font size bigger */
+
+table {
+    border: 2px solid #555B4C;
+}
+
+td {
+    border: 1px solid #555B4C;
+    padding: 0.25rem;
+}
+/* borders and padding for table */
+
+/* || GALLERY */
+
+.gallery-img {
+    border: none;
+    border-radius: 0%;
+}
+
+/* no border on gallery of images, unlike the images on the other pages */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/* display the gallery article as a grid, specifying 3 columns taking up an equal fraction of the page (1fr); centering images within their cells horizontally with justify center */
+
+/* || FOOTER */
+footer ul {
+    list-style-type: none;
+        text-align: center;
+    padding: 1rem;
+}
+
+footer li {
+        display: inline;
+    margin-right: 1rem;
+}
+/* cetnered, inline, padding, no bullets*/
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* changing footer color so it is legible */
+
+/* || ARCHIVE */
+.archive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    color: #44493d;
+}
+/* displaying as grid of columns that have a minimum width of 300px, auto-fit makes them responsive; the 1fr max specifies a max width of 1 fractional unit so that the columns remain even */
+
+.archive p {
+    color: #555B4C;
+}
+/* p color in archive cells */
+
+.item-archive {
+    border: 2px solid #A48681;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #cfc7dd4d;
+}
+/* styling for the archive grid cells */
+
+.item-archive h2 {
+    background-color: #a8b19ca4;
+    border-radius: 5px;
+}
+/* styling for the h2 of the grid cells */
+
+.item-archive img {
+    border: none;
+    border-radius: 0;
+    height: auto;
+}
+/* no border on archive imgs and maintain aspect ration with height auto */
+
+.item-archive a {
+    text-decoration: underline;
+}
+/* archive links underline to make it clearer that they are links */
+
+/* || LINKS */
+
+a {
+    text-decoration: none;
+    color: #A48681;
+}
+
+/* no underline, added color */
+
+a:hover,
+a:focus {
+    color: #555B4C;
+}
+
+/* diff color for hover and focus on link */
+
+/* floating img on index page */
+
+figcaption {
+    position: absolute;
+    left: -99999px;
+}
+
+/* hiding figcaptions */
+
+/* COLOR PALETTE CLASS */
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 1rem;
+}
+
+/* displaying my span elements as inline blocks, specified width and height, added border and radius */
+
+.ebony {
+    background-color: #555B4C;
+}
+
+.desertSand {
+    background-color: #E6C2AB;
+}
+
+.cinereous {
+    background-color: #A48681;
+}
+
+.thistle {
+    background-color: #CFC7DD;
+}
+
+.beaver {
+    background-color: #C1937B;
+}
+
+/* background colors for the span blocks */
+
+/* || SITEMAP */
+ul {
+    list-style-type: none;
+}
+
+.site-li {
+    margin-left: 1rem;
+}
+
+/* || MEDIA QUERIES */
+
+/* small */
+
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        align-self: center;
+    } 
+
+    .indexContent {
+        display: block;
+    }
+
+    .centerP {
+        width: 100%;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* h1 is smaller, nav aligned center; displaying index and gallery content as block; adjusted gallery img width to fit the page */
+
+/* medium */
+
+@media screen and (min-width: 768px) {
+    .policies {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* policies list display block at this size, as the grid doesnt look logical at this size */
+
+/* large */
+
+@media screen and (min-width: 992px) {
+    nav {
+        align-self: flex-end;
+    }
+
+    .indexContent {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+/* nav back to the right, reapplying flex and grid for index and gallery, increased h1 size */
+
+/* 2xl */
+
+@media screen and (min-width:1400px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* everything looks fine at this size, since thats how i started; h1 a little bigger */
